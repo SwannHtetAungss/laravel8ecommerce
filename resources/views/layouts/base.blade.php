@@ -90,7 +90,7 @@
                                 @if(Auth::user()->utype === 'ADM')
                                 <!-- Admin link -->
                                 <li class="menu-item menu-item-has-children parent">
-                                    <a title="Myaccount" href="#">My Account {{Auth::user()->name}}<i
+                                    <a title="Myaccount" href="#">My Account ({{Auth::user()->name}})<i
                                             class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul class="submenu curency">
                                         <li class="menu-item">
@@ -108,7 +108,7 @@
                                 @else
                                 <!-- Customer link -->
                                 <li class="menu-item menu-item-has-children parent">
-                                    <a title="Myaccount" href="#">My Account {{Auth::user()->name}}<i
+                                    <a title="Myaccount" href="#">My Account ({{Auth::user()->name}})<i
                                             class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul class="submenu curency">
                                         <li class="menu-item">
