@@ -1,4 +1,3 @@
-<!--main area-->
 <main id="main" class="main-site">
 
     <div class="container">
@@ -286,4 +285,3 @@
     <!--end container-->
 
 </main>
-<!--main area-->
