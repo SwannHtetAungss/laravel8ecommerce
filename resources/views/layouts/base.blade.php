@@ -15,15 +15,21 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
+    {{--
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}"> --}}
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/flexslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/chosen.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-01.css')}}">
-
+    {{-- select box multioption select2 --}}
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
+    {{-- bootstrap 3 for datepicker --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    {{-- Date Time Picker --}}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
 
     @livewireStyles
 </head>
@@ -119,6 +125,9 @@
                                         <li class="menu-item">
                                             <a title="Manage Home Categories"
                                                 href="{{route('admin.homecategories')}}">Manage Home Categories</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a title="Sale Setting" href="{{route('admin.sale')}}">Sale Setting</a>
                                         </li>
                                         <li class="menu-item">
                                             <a href="{{route('logout')}}"
@@ -220,7 +229,7 @@
                                         class="nav-label hot-label">hot</span></li>
                                 <li class="menu-item"><a href="#" class="link-term">Top Selling</a><span
                                         class="nav-label hot-label">hot</span></li>
-                                <li class="menu-item"><a href="#" class="link-term">Top rated items</a><span
+                                <li class="menu-item"><a href="#" class="link-term">Top Related</a><span
                                         class="nav-label hot-label">hot</span></li>
                             </ul>
                         </div>
@@ -558,15 +567,29 @@
 
     <script src="{{asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
     <script src="{{asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    {{-- <script src="{{asset('assets/js/bootstrap.min.js')}}"></script> --}}
     <script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
     {{-- <script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script> --}}
     <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
     <script src="{{asset('assets/js/functions.js')}}"></script>
+    {{-- select box multioption for select2 --}}
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    {{-- Moment js --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    {{-- bootstrap 3 for datepicker --}}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    </script>
+    {{-- date time picker --}}
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
+    </script>
 
     @livewireScripts
 
