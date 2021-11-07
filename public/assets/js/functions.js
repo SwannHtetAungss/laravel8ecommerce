@@ -106,7 +106,8 @@
             }
             if ($("select:not(.except-chosen)").length > 0) {
                 $("select:not(.except-chosen)").each(function () {
-                    $(this).chosen();
+                    // $(this).chosen();
+                    $(this).select2();
                 });
             }
         },
