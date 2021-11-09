@@ -4,7 +4,7 @@
 
         <div class="wrap-breadcrumb">
             <ul>
-                <li class="item-link"><a href="#" class="link">home</a></li>
+                <li class="item-link"><a href="/" class="link">home</a></li>
                 <li class="item-link"><span>Digital & Electronics</span></li>
             </ul>
         </div>
@@ -106,7 +106,8 @@
                                         To Cart</a>
                                     <div class="product-wish">
                                         @if($witems->contains($product->id))
-                                        <a href="#"><i class="fa fa-heart fill-heart"></i></a>
+                                        <a href="#" wire:click.prevent="removeFromWishlist({{$product->id}})"><i
+                                                class="fa fa-heart fill-heart"></i></a>
                                         @else
                                         <a href="#"
                                             wire:click.prevent="addToWishlist({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i
