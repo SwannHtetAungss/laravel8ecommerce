@@ -29,7 +29,7 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
+                                    <th>No.</th>
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Stock</th>
@@ -41,9 +41,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($products as $product)
+                                @foreach ($products as $key=>$product)
                                 <tr>
-                                    <td>{{$product->id}}</td>
+                                    <td>{{++$key}}</td>
                                     <td><img src="{{asset('assets/images/products')}}/{{$product->image}}"
                                             alt="{{$product->name}}" width="60"></td>
                                     <td>{{$product->name}}</td>
@@ -56,7 +56,9 @@
                                         <a href="{{route('admin.editproduct',['product_slug'=>$product->slug])}}">
                                             <i class="fa fa-edit fa-2x text-info"></i>
                                         </a>
-                                        <a href="#" style="margin-left: 10px;"
+                                        <a href="#"
+                                            onclick="confirm('Are you sure, You want to delete this product?') || event.stopImmediatePropagation()"
+                                            style="margin-left: 10px;"
                                             wire:click.prevent="deleteProduct({{$product->id}})"><i
                                                 class="fa fa-times fa-2x text-danger"></i></a>
                                     </td>

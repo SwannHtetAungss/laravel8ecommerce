@@ -21,7 +21,7 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
+                                    <th>No.</th>
                                     <th>Image</th>
                                     <th>Title</th>
                                     <th>Subtitle</th>
@@ -33,9 +33,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($sliders as $slider)
+                                @foreach ($sliders as $key=>$slider)
                                 <tr>
-                                    <td>{{$slider->id}}</td>
+                                    <td>{{++$key}}</td>
                                     <td><img src="{{asset('assets/images/sliders')}}/{{$slider->image}}" width="120"
                                             alt="{{$slider->title}}"></td>
                                     <td>{{$slider->title}}</td>
@@ -47,7 +47,10 @@
                                     <td>
                                         <a href="{{route('admin.edithomeslider',['slider_id'=>$slider->id])}}"><i
                                                 class="fa fa-edit fa-2x text-info"></i></a>
-                                        <a href="#" wire:click.prevent="deleteSlide({{$slider->id}})"><i
+                                        <a href="#"
+                                            onclick="confirm('Are you sure, You want to delete this slider?') || event.stopImmediatePropagation()"
+                                            style="margin-left: 10px;"
+                                            wire:click.prevent="deleteSlide({{$slider->id}})"><i
                                                 class="fa fa-times fa-2x text-danger"></i></a>
                                     </td>
                                 </tr>
