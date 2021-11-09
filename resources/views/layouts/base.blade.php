@@ -598,6 +598,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"
         integrity="sha512-ZKqmaRVpwWCw7S7mEjC89jDdWRD/oMS0mlfH96mO0u3wrPYoN+lXmqvyptH4P9mY6zkoPTSy5U2SwKVXRY5tYQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {{-- Tiny MEC --}}
+    <script src="https://cdn.tiny.cloud/1/v5x4779ccjrjplp0ay3q5uadnkw0yg4bilogodxkzoab23ue/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
 
     @livewireScripts
 
