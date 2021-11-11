@@ -35,7 +35,7 @@
                                 <label for="" class="col-md-4 control-label">Coupon Type</label>
                                 <div class="col-md-4">
                                     <select class="form-control" wire:model="type">
-                                        <option value="">Select</option>
+                                        <option value="#">Select</option>
                                         <option value="fixed">Fixed</option>
                                         <option value="percent">Percent</option>
                                     </select>
