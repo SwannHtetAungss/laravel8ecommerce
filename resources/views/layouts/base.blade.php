@@ -137,7 +137,11 @@
                                             <a title="All Coupon" href="{{route('admin.coupons')}}">All Coupon</a>
                                         </li>
                                         <li class="menu-item">
-                                            <a title="All Coupon" href="{{route('admin.orders')}}">All Orders</a>
+                                            <a title="All Orders" href="{{route('admin.orders')}}">All Orders</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a title="Contact Messages" href="{{route('admin.contact')}}">Contact
+                                                Messages</a>
                                         </li>
                                         <li class="menu-item">
                                             <a href="{{route('logout')}}"
@@ -257,7 +261,7 @@
                                     <a href="/checkout" class="link-term mercado-item-title">Checkout</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
+                                    <a href="/contact-us" class="link-term mercado-item-title">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
