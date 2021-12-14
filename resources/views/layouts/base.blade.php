@@ -161,6 +161,10 @@
                                             <a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
                                         </li>
                                         <li class="menu-item">
+                                            <a title="Change Password" href="{{route('user.changepassword')}}">Change
+                                                Password</a>
+                                        </li>
+                                        <li class="menu-item">
                                             <a href="{{route('logout')}}"
                                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                                         </li>
